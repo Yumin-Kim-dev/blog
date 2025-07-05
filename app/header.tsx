@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/theme-toggle";
 
 export default function Header() {
     return (
-        <header className="w-full border-b sticky top-0 bg-white z-50">
+        <header className="w-full border-b sticky top-0 bg-background z-50">
             <div className="mx-auto flex items-center justify-between px-6 py-3">
                 {/* Left - Logo */}
                 <div className="flex items-center gap-2">
@@ -12,7 +12,7 @@ export default function Header() {
                 </div>
 
                 {/* Center - Navigation */}
-                <nav className="hidden md:flex gap-6 text-sm text-gray-800 font-medium">
+                <nav className="hidden md:flex gap-6 text-sm text-foreground font-medium">
                     <span>About</span>
                     <span>Posts</span>
                 </nav>
