@@ -10,7 +10,9 @@ const nextConfig: import('next').NextConfig = {
 const withMDX = createMDX({
     // Add Markdown plugins here, as desired
     options: {
-        remarkPlugins: [remarkGfm],
+        remarkPlugins: [
+            ['remark-gfm', {strict: true, throwOnError: true}]
+        ],
         rehypePlugins: [],
     }
 })
