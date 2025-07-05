@@ -32,7 +32,7 @@ export default function RootLayout({
         <Header />
 
         {/* Main content */}
-        <div className="flex flex-1 container mx-auto">
+        <div className="flex flex-1 container mx-auto max-w-4xl">
           <main className="flex-1 p-6">
             {children}
           </main>
