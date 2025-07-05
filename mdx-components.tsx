@@ -49,8 +49,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         pre: ({ className, ...props }) => (
             <pre className={cn("mb-4 mt-4 overflow-x-auto rounded-lg bg-muted p-4", className)} {...props} />
         ),
-        img: ({ className, ...props }) => (
-            <img className={cn("rounded-md border", className)} {...props} />
+        img: ({ className, alt, ...props }) => (
+            <img className={cn("rounded-md border", className)} alt={alt || ""} {...props} />
         ),
         strong: ({ className, ...props }) => (
             <strong className={cn("font-bold", className)} {...props} />
