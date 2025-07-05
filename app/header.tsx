@@ -1,6 +1,7 @@
 "use client";
 
 import ThemeToggle from "@/components/theme-toggle";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -8,13 +9,15 @@ export default function Header() {
             <div className="mx-auto flex items-center justify-between px-6 py-3">
                 {/* Left - Logo */}
                 <div className="flex items-center gap-2">
-                    <img src="/favicon.ico" alt="Logo" className="w-6 h-6" />
+                    <Link href="/">
+                        <img src="/favicon.ico" alt="Logo" className="w-6 h-6" />
+                    </Link>
                 </div>
 
                 {/* Center - Navigation */}
                 <nav className="hidden md:flex gap-6 text-sm text-foreground font-medium">
-                    <span>About</span>
-                    <span>Posts</span>
+                    <Link href="/about"><span>About</span></Link>
+                    {/*<Link href="/posts"><span>Posts</span></Link>*/}
                 </nav>
 
                 {/* Right */}
