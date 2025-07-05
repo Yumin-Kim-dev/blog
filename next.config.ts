@@ -1,5 +1,4 @@
 import createMDX from '@next/mdx'
-import remarkGfm from "remark-gfm";
 
 const nextConfig: import('next').NextConfig = {
     // Configure `pageExtensions` to include markdown and MDX files
@@ -10,9 +9,7 @@ const nextConfig: import('next').NextConfig = {
 const withMDX = createMDX({
     // Add Markdown plugins here, as desired
     options: {
-        remarkPlugins: [
-            ['remark-gfm', {strict: true, throwOnError: true}]
-        ],
+        remarkPlugins: [],
         rehypePlugins: [],
     }
 })
