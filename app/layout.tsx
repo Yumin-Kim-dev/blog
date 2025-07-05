@@ -33,7 +33,7 @@ export default function RootLayout({
         <Header />
 
         {/* Main content with sidebar - Notion-like layout */}
-        <div className="flex flex-1 container">
+        <div className="flex flex-1 container mx-auto">
           {/* Main content */}
           <main className="flex-1 p-6">
             {children}
@@ -42,7 +42,7 @@ export default function RootLayout({
 
         {/* Footer */}
         <footer className="border-t border-border py-6 bg-secondary/20">
-          <div className="container flex flex-col md:flex-row justify-between items-center">
+          <div className="container flex flex-col md:flex-row justify-between items-center mx-auto">
             <div className="mb-4 md:mb-0">
               <p className="text-sm text-muted-foreground">© 2024 Yumin Kim. All rights reserved.</p>
             </div>
